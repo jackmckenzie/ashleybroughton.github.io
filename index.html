@@ -5,8 +5,62 @@
   <title>ashleybroughton.github.io</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    .chalkboard     { background-color: rgb(34, 34, 34); }
+    .pink-chalk     { background-color: rgb(242, 163, 189); }
+    .yellow-chalk   { background-color: rgb(214, 217, 99); }
+    .turqoise-chalk { background-color: rgb(111, 231, 219); }
+    .purple-chalk   { background-color: rgb(196, 173, 201); }
+    .white-chalk    { background-color: rgb(244, 244, 240); }
+    
+    .red-chalk-outside    { background-color: rgb(237, 119, 119); }
+    .orange-chalk-outside { background-color: rgb(250, 212, 139); }
+    .yellow-chalk-outside { background-color: rgb(245, 249, 173); }
+    .green-chalk-outside  { background-color: rgb(188, 223, 138); }
+    .blue-chalk-outside   { background-color: rgb(148, 192, 204); }
+    .white-chalk-outside  { background-color: rgb(246, 244, 241); }
+    
+    body {
+        background-color: rgb(34, 34, 34);
+    }
+    
+    .colour-palette {
+        padding-bottom: 3px;
+    }
+    
+    .colour-palette-option {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    
+    #drawing-area {
+        border: 2px solid rgb(188, 223, 138);
+    }
+  </style>
 </head>
 <body>
-ashleybroughton.github.io
+
+<div class="colour-palette">
+    <div class="colour-palette-option pink-chalk">&nbsp;</div>
+    <div class="colour-palette-option yellow-chalk">&nbsp;</div>
+    <div class="colour-palette-option turqoise-chalk">&nbsp;</div>
+    <div class="colour-palette-option purple-chalk">&nbsp;</div>
+    <div class="colour-palette-option white-chalk">&nbsp;</div>
+    <div class="colour-palette-option red-chalk-outside">&nbsp;</div>
+    <div class="colour-palette-option orange-chalk-outside">&nbsp;</div>
+    <div class="colour-palette-option yellow-chalk-outside">&nbsp;</div>
+    <div class="colour-palette-option green-chalk-outside">&nbsp;</div>
+    <div class="colour-palette-option blue-chalk-outside">&nbsp;</div>
+    <div class="colour-palette-option white-chalk-outside">&nbsp;</div>
+</div>
+
+<canvas id="drawing-area" class="chalkboard" width="600" height="440"></canvas>
+
+<p style="color: #f92672">#f92672 - token tag nice and red</p>
+<p style="color: #a6e22e">#a6e22e - attribute name, pastel green</p>
+<p style="color: #e6db74">#e6db74 - attribute value, yellowy</p>
+
 </body>
 </html>
