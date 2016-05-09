@@ -7,22 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <style>
-    .chalkboard     { background-color: rgb(34, 34, 34); }
-    .pink-chalk     { background-color: rgb(242, 163, 189); }
-    .yellow-chalk   { background-color: rgb(214, 217, 99); }
-    .turqoise-chalk { background-color: rgb(111, 231, 219); }
-    .purple-chalk   { background-color: rgb(196, 173, 201); }
-    .white-chalk    { background-color: rgb(244, 244, 240); }
+    .chalkboard-bg     { background-color: rgb(34, 34, 34); }
+    .pink-chalk-bg     { background-color: rgb(242, 163, 189); }
+    .yellow-chalk-bg   { background-color: rgb(214, 217, 99); }
+    .turqoise-chalk-bg { background-color: rgb(111, 231, 219); }
+    .purple-chalk-bg   { background-color: rgb(196, 173, 201); }
+    .white-chalk-bg    { background-color: rgb(244, 244, 240); }
     
-    .red-chalk-outside    { background-color: rgb(237, 119, 119); }
-    .orange-chalk-outside { background-color: rgb(250, 212, 139); }
-    .yellow-chalk-outside { background-color: rgb(245, 249, 173); }
-    .green-chalk-outside  { background-color: rgb(188, 223, 138); }
-    .blue-chalk-outside   { background-color: rgb(148, 192, 204); }
-    .white-chalk-outside  { background-color: rgb(246, 244, 241); }
+    .red-chalk-outside-bg    { background-color: rgb(237, 119, 119); }
+    .orange-chalk-outside-bg { background-color: rgb(250, 212, 139); }
+    .yellow-chalk-outside-bg { background-color: rgb(245, 249, 173); }
+    .green-chalk-outside-bg  { background-color: rgb(188, 223, 138); }
+    .blue-chalk-outside-bg   { background-color: rgb(148, 192, 204); }
+    .white-chalk-outside-bg  { background-color: rgb(246, 244, 241); }
+    
+    .chalkboard-fg     { color: rgb(34, 34, 34); }
+    .pink-chalk-fg     { color: rgb(242, 163, 189); }
+    .yellow-chalk-fg   { color: rgb(214, 217, 99); }
+    .turqoise-chalk-fg { color: rgb(111, 231, 219); }
+    .purple-chalk-fg   { color: rgb(196, 173, 201); }
+    .white-chalk-fg    { color: rgb(244, 244, 240); }
+    
+    .red-chalk-outside-fg    { color: rgb(237, 119, 119); }
+    .orange-chalk-outside-fg { color: rgb(250, 212, 139); }
+    .yellow-chalk-outside-fg { color: rgb(245, 249, 173); }
+    .green-chalk-outside-fg  { color: rgb(188, 223, 138); }
+    .blue-chalk-outside-fg   { color: rgb(148, 192, 204); }
+    .white-chalk-outside-fg  { color: rgb(246, 244, 241); }
     
     body {
         background-color: rgb(34, 34, 34);
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 200;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 50px;
     }
     
     .colour-palette {
@@ -42,21 +69,23 @@
 </head>
 <body>
 
+<h1 class="white-chalk-fg">Chalkboardy Pastel Colours</h1>
+
 <div class="colour-palette">
-    <div class="colour-palette-option pink-chalk">&nbsp;</div>
-    <div class="colour-palette-option yellow-chalk">&nbsp;</div>
-    <div class="colour-palette-option turqoise-chalk">&nbsp;</div>
-    <div class="colour-palette-option purple-chalk">&nbsp;</div>
-    <div class="colour-palette-option white-chalk">&nbsp;</div>
-    <div class="colour-palette-option red-chalk-outside">&nbsp;</div>
-    <div class="colour-palette-option orange-chalk-outside">&nbsp;</div>
-    <div class="colour-palette-option yellow-chalk-outside">&nbsp;</div>
-    <div class="colour-palette-option green-chalk-outside">&nbsp;</div>
-    <div class="colour-palette-option blue-chalk-outside">&nbsp;</div>
-    <div class="colour-palette-option white-chalk-outside">&nbsp;</div>
+    <div class="colour-palette-option pink-chalk-bg">&nbsp;</div>
+    <div class="colour-palette-option yellow-chalk-bg">&nbsp;</div>
+    <div class="colour-palette-option turqoise-chalk-bg">&nbsp;</div>
+    <div class="colour-palette-option purple-chalk-bg">&nbsp;</div>
+    <div class="colour-palette-option white-chalk-bg">&nbsp;</div>
+    <div class="colour-palette-option red-chalk-outside-bg">&nbsp;</div>
+    <div class="colour-palette-option orange-chalk-outside-bg">&nbsp;</div>
+    <div class="colour-palette-option yellow-chalk-outside-bg">&nbsp;</div>
+    <div class="colour-palette-option green-chalk-outside-bg">&nbsp;</div>
+    <div class="colour-palette-option blue-chalk-outside-bg">&nbsp;</div>
+    <div class="colour-palette-option white-chalk-outside-bg">&nbsp;</div>
 </div>
 
-<canvas id="drawing-area" class="chalkboard" width="600" height="440"></canvas>
+<canvas id="drawing-area" class="chalkboard-bg" width="600" height="440"></canvas>
 
 <p style="color: #f92672">#f92672 - token tag nice and red</p>
 <p style="color: #a6e22e">#a6e22e - attribute name, pastel green</p>
