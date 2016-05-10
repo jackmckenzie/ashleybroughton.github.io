@@ -5,10 +5,107 @@
   <title>ashleybroughton.github.io</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style type="text/css">
+    body {
+      background-color: #f1f1f1;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+    a { 
+      color: #4183c4; 
+      text-decoration: none; 
+    }
+    
+    a:hover { 
+      text-decoration: underline;
+    }
+    
+    h1 {
+      margin: 90px auto 0 auto;
+      font-size: 48px;
+      font-weight: 200;
+      line-height: 60px;
+      text-align: center;
+      max-width: 910px;
+      color: #333;
+    }
+    
+    p { 
+      color: rgba(0, 0, 0, 0.5); 
+      margin: 20px 0; 
+      line-height: 1.6; 
+    }
+    
+    .tabs {
+      display: inline-block;
+      margin: 45px auto 0;
+      font-size: 0;
+    }
+
+    .question .tabs {
+      margin: 30px auto 0;
+    }
+
+    .tabs li {
+      display: inline-block;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .tabs li:first-child a {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .tabs li:last-child a {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .tabs li:nth-child(even) a {
+      margin: 0 -1px;
+    }
+
+    .tabs a {
+      color: #323232;
+      background-color: #fff;
+      padding: 10px 20px;
+      display: inline-block;
+      border: 1px solid #dddddd;
+      position: relative;
+      line-height: 1em;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+    }
+
+    .question .tabs a {
+      background-color: #fcfcfc;
+    }
+
+    .tabs a:hover {
+      color: #327fc7;
+      border-color: #327fc7;
+      z-index: 10;
+    }
+
+    .tabs a.selected {
+      z-index: 20;
+      color: #fff;
+      background-color: #327fc7;
+      border-color: #327fc7;
+      outline: none;
+    }
+  </style>
 </head>
 <body>
-ashleybroughton.github.io
-
-<a href="colours.html">Colours page</a>
+  <h1>ashleybroughton.github.io</h1>
+  <ul class="tabs">
+    <li><a href="index.html" class="selected">Home</a></li>
+    <li><a href="colours.html" class="">Colours</a></li>
+  </ul>
 </body>
 </html>
